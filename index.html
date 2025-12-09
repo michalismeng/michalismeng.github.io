@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My DevOps Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #0d1117;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-top: 60px;
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .project-card {
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            will-change: transform, box-shadow;
+            transition: transform 200ms cubic-bezier(.2,.9,.2,1), box-shadow 200ms cubic-bezier(.2,.9,.2,1);
+        }
+
+        .project-card:hover,
+        .project-card:focus-within {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12), 0 4px 8px rgba(15, 23, 42, 0.06);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .project-card {
+                transition: none !important;
+                transform: none !important;
+            }
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Michalis Mengisoglou</h1>
+        <h3>DevOps • Cloud Infrastructure • Kubernetes</h3>
+    </header>
+
+
+    <div class="container mt-5">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a DevOps-focused software engineer with experience building automation
+            pipelines, managing CI/CD workflows, deploying scalable cloud infrastructure,
+            and improving engineering productivity through tooling and monitoring.
+
+            I also enjoy building side projects that combine software development, automation, and systematic trading concepts.
+        </p>
+
+        <h2 class="section-title">Core Skills</h2>
+
+        <div class="row">
+            <div class="col-md-auto">
+                <ul>
+                    <li>AWS</li>
+                    <li>Terraform / Ansible</li>
+                    <li>Python / Go</li>
+                </ul>
+            </div>
+            <div class="col-md-auto">
+                <ul>
+                    <li>Docker / Kubernetes</li>
+                    <li>Helm / Kustomize</li>
+                    <li>GitHub Actions / Jenkins</li>
+                </ul>
+            </div>
+            <div class="col-md-auto">
+                <ul>
+                    <li>Linux, Bash</li>
+                    <li>Monitoring (Prometheus, Grafana)</li>
+                    <li>Networking & Security</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="">
+
+        <div class="mb-5">
+            <h4>DevOps Engineer - Hewlett Packard Enterprise</h4>
+            <p><strong>Nov 2023 – Present</strong></p>
+            <ul>
+                <li>Implemented best DevOps practices for multiple GitHub repositories, enabling the eﬃcient release of our AI oﬀering to product stakeholders (QA team, customers, etc...).</li>
+                <li>Streamlined product versioning under a uniﬁed semantic scheme, enhancing the overall release process.</li>
+                <li>Automated manual deployment processes and deployed components to Kubernetes clusters using Helm charts.</li>
+                <li>Extended and improved the automated build orchestrator, resulting in 30% faster and more consistent builds and further facilitating developers during feature development and testing.</li>
+                <li>Developed and optimized CI/CD pipelines to enhance eﬃciency and reliability across the software lifecycle, including build, deployment, testing, and release processes.</li>
+                <li>Tracked and resolved software vulnerabilities (CVEs) to maintain a secure codebase.</li>
+            </ul>
+        </div>
+
+        <div class="mb-5">
+            <h4>IT Engineer - Hellenic Army</h4>
+            <p><strong>Sep 2022 – Sep 2023</strong></p>
+            <ul>
+                <li>Responsible for IT-related projects and digitalization initiatives as part of my mandatory military service.</li>
+                <li>Containerized applications and deployed them on Kubernetes clusters.</li>
+            </ul>
+        </div>
+
+        <div class="mb-5">
+            <h4>DevOps Engineer - Arrikto (MLOps Startup)</h4>
+            <p><strong>Nov 2020 – Jul 2022</strong></p>
+            <ul>
+            <li>Built an automated tool to deploy Arrikto’s Enterprise Kubeﬂow distribution on Amazon EKS, cutting setup time by over 50% and enabling faster customer onboarding and greater deployment scalability.</li>
+            <li>Managed the complete AWS setup process, provisioning all required resources for customers - including IAM roles, VPCs, subnets, and EKS clusters - to support end-to-end deployments.</li>
+            <li>Enhanced the account management system by adding OIDC authentication, enabling integration with customer identity providers such as GitLab, Google, and Okta.</li>
+        </ul>
+        </div>
+
+        <div class="mb-5">
+            <h4>Full Stack Developer - Freelancer</h4>
+            <p><strong>2018 – 2020</strong></p>
+            <ul>
+                <li>Designed and implemented modern web apps to improve teaching experiences for students.</li>
+                <li>Developed both Backend and Frontend components and deployed to Azure App Service.</li>
+                <li>Worked on API management, created REST APIs and SDK clients.</li>
+                <li>Integrated payments with Viva Wallet for online payments.</li>
+            </ul>
+        </div>
+
+        </div>
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="mb-5">
+            <h4>Integrated Master of Electrical and Computer Engineering</h4>
+            <p><strong>2015 – 2020, National Technical University of Athens</strong></p>
+            <ul>
+                <li>Grade: 9.0/10 (Summa Cum Laude).</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card project-card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">AssetBloom</h4>
+                        <p class="card-text">
+                            An app for managing long-term diversified investment portfolios.
+                            Fully automated deployment on a single VM with Terraform, Ansible and Docker Compose.
+                        </p>
+                        <a href="https://assetbloom.io" target="_blank" class="btn btn-outline-primary">Visit AssetBloom</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card project-card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Me Operating System</h4>
+                        <p class="card-text">
+                            A Unix-like operating system built from scratch with C++. It features virtual memory management,
+                            FAT file system support, process scheduling and a basic IP networking stack.
+                        </p>
+                        <a href="https://github.com/michalismeng/Me-Operating-System" target="_blank" class="btn btn-outline-primary">Visit Repository</a>
+                        <a href="https://github.com/michalismeng/suckless-os" target="_blank" class="btn btn-outline-primary">View a second attempt in Rust</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card project-card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Algo Trading</h4>
+                        <p class="card-text">
+                            A set of algorithmic trading building blocks in Python, featuring bootstrap implementation,
+                            walk-forward optimization, risk of ruin calculations and visualizations.
+                        </p>
+                        <a href="https://github.com/michalismeng/algo-trading" target="_blank" class="btn btn-outline-primary">Visit Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <p>Feel free to explore more of my projects on <a href="https://github.com/michalismeng" target="_blank">GitHub</a>.</p>
+
+            <!-- Project 4 -->
+            <!-- <div class="col-md-6">
+                <div class="card project-card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Cost Optimization Initiative</h4>
+                        <p class="card-text">
+                            Identified 32% annual cloud savings through rightsizing, reserved instances, and
+                            storage lifecycle policies.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:michalis.mengisoglou@gmail.com">michalis.mengisoglou@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/michalis-mengisoglou/" target="_blank">Michalis Mengisoglou</a></p>
+    </div>
+
+
+    <footer>
+        © 2025 Michalis Mengisoglou – DevOps & Cloud Engineer
+    </footer>
+</body>
+
+</html>
